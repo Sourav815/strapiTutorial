@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "landing_pages",
+  "info": {
+    "singularName": "landing-page",
+    "pluralName": "landing-pages",
+    "displayName": "landingPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "metadata": {
+      "type": "component",
+      "repeatable": true,
+      "component": "seo.meta-data"
+    },
+    "HeroElement": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.hero-section"
+      ]
+    },
+    "registration": {
+      "type": "richtext"
+    }
+  }
+}

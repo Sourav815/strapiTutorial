@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_blocks_hero_sections",
+  "info": {
+    "displayName": "HeroSection"
+  },
+  "options": {},
+  "attributes": {
+    "Heding": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "heroImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "button": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.button-link"
+    }
+  }
+}
